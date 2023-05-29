@@ -4,6 +4,7 @@ $shadow-color: #aa0077;
 $black-color: #333;
 $text-shadow: 1px 1px 3px $black-color;
 $media-width: 900px;
+$randomNumber: random(2);
 
 * {
   vertical-align: baseline;
@@ -60,6 +61,7 @@ body {
 .page {
   padding: 10vw;
   padding-top: $unit * 16;
+  padding-bottom: $unit * 12;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,6 +78,7 @@ body {
     gap: $unit * 12;
 
     .page-item {
+      animation: slide-in 1s cubic-bezier(0.165, 0.84, 0.44, 1);
       h1 {
         border-left: $unit solid $shadow-color;
         padding: $unit * 2;
@@ -95,12 +98,12 @@ body {
           .product-item {
             &:hover {
               cursor: default;
-              transform: translate3d(0, 0, 0);
+              // transform: translate3d(0, 0, 0);
             }
 
-            &::after {
-              display: none;
-            }
+            // &::after {
+            //   display: none;
+            // }
           }
         }
 
@@ -234,9 +237,24 @@ hr {
 }
 
 .footer {
-  position: sticky;
-  @include fill-width-100();
-  top: 0;
+  height: $unit * 45;
+  background-color: $shadow-color;
+  display: flex;
+  flex-direction: row;
+  padding: $unit * 12;
+  justify-content: space-between;
+
+  p,
+  h4,
+  a {
+    padding: $unit;
+    color: #eee;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero {
@@ -389,6 +407,17 @@ hr {
     @include style-shadow();
 
     width: $unit * 20;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate3d(0, 150%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
 

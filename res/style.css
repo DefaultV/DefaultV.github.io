@@ -23,6 +23,7 @@ body {
 .page {
   padding: 10vw;
   padding-top: 64px;
+  padding-bottom: 48px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,9 @@ body {
 }
 .page .page-content h1 {
   padding-bottom: 8px;
+}
+.page .page-content .page-item {
+  animation: slide-in 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .page .page-content .page-item h1 {
   border-left: 4px solid #aa0077;
@@ -54,10 +58,6 @@ body {
 }
 .page .page-content .page-item .page-item-column.no-hover .product-item:hover {
   cursor: default;
-  transform: translate3d(0, 0, 0);
-}
-.page .page-content .page-item .page-item-column.no-hover .product-item::after {
-  display: none;
 }
 .page .page-content .page-item .page-item-column.center {
   justify-content: center;
@@ -171,9 +171,22 @@ hr {
 }
 
 .footer {
-  position: sticky;
-  width: 100%;
-  top: 0;
+  height: 180px;
+  background-color: #aa0077;
+  display: flex;
+  flex-direction: row;
+  padding: 48px;
+  justify-content: space-between;
+}
+.footer p,
+.footer h4,
+.footer a {
+  padding: 4px;
+  color: #eee;
+}
+.footer .footer-contact {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
@@ -300,6 +313,16 @@ hr {
   width: 80px;
 }
 
+@keyframes slide-in {
+  0% {
+    transform: translate3d(0, 150%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
 @keyframes rainbow {
   0% {
     filter: hue-rotate(0deg);
