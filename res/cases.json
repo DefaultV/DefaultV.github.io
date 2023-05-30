@@ -1,0 +1,76 @@
+{
+  "cases": [
+    {
+      "id": 0,
+      "title": "🎨 Virtual Exhibitions",
+      "body": "Artland [🥇 Best on market]",
+      "featureImageUrl": "res/artland_1.jpeg",
+      "additionalMediaUrls": [
+        "res/artland2.png",
+        "res/artland3.png",
+        "res/artland4.png",
+        "res/artland5.png",
+        "res/artland6.png",
+        "res/artland_clip1.mp4",
+        "res/artland_clip2.mp4"
+      ],
+      "externalLink": "https://www.artland.com/exhibitions?filter=VR%20Exhibitions#exhibitions-content-area",
+      "externalLinkDescription": "See them here"
+    },
+    {
+      "id": 1,
+      "title": "🔮 3D Viewer",
+      "body": "Artland",
+      "featureImageUrl": "res/viewer2.png",
+      "additionalMediaUrls": ["res/viewer3.png", "res/viewer_clip1.mp4"],
+      "externalLink": "https://www.artland.com/artworks/tomas-saraceno-k236-cmi",
+      "externalLinkDescription": "Live example"
+    },
+    {
+      "id": 2,
+      "title": "🐼 The Ogi: Cycles",
+      "body": "Game",
+      "featureImageUrl": "res/ogi2.png",
+      "externalLink": "https://ogi2.onrender.com/",
+      "externalLinkDescription": "See it here"
+    },
+    {
+      "id": 3,
+      "title": "🐼 The Ogi",
+      "body": "Itch IO - GameJam [🥉 Graphics]",
+      "featureImageUrl": "res/ogi1.png",
+      "externalLink": "https://defaultv.itch.io/the-ogi",
+      "externalLinkDescription": "Play it here"
+    },
+    {
+      "id": 4,
+      "title": "🎶 ELPi",
+      "body": "Music Streaming",
+      "featureImageUrl": "res/elpi.png",
+      "externalLink": "https://github.com/DefaultV/ELPi",
+      "externalLinkDescription": "Github page"
+    },
+    {
+      "id": 5,
+      "title": "⛰️ Maddinburg Hills",
+      "body": "Itch IO - GameJam",
+      "featureImageUrl": "res/maddingburg2.png",
+      "externalLink": "https://defaultv.itch.io/maddinburg",
+      "externalLinkDescription": "Play it here"
+    },
+    {
+      "id": 6,
+      "title": "🫣 EBB",
+      "body": "Game",
+      "featureImageUrl": "res/ebb.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "🛰️ CUBI",
+      "body": "Android App",
+      "featureImageUrl": "res/cubi.jpeg",
+      "externalLink": "https://play.google.com/store/apps/details?id=com.Company.JaGaGames",
+      "externalLinkDescription": "Store page"
+    }
+  ]
+}

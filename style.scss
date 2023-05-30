@@ -35,7 +35,7 @@ $randomNumber: random(2);
   filter: drop-shadow(2px 1px 0px $shadow-color);
 }
 @mixin style-outline {
-  outline: 2px solid #111;
+  outline: 2px solid $shadow-color;
 }
 @mixin style-border {
   border: 2px solid $black-color;
@@ -337,11 +337,14 @@ hr {
   position: fixed;
   z-index: 1;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: $unit * 2;
 
   backdrop-filter: blur(4px);
-  background-color: rgba($black-color, 0.85);
+  background-color: rgba($black-color, 0.95);
   padding: $unit * 2;
-  padding-top: $unit * 30;
+  // padding-top: $unit * 30;
 
   @media screen and (min-width: $media-width) {
     padding: $unit * 20;
@@ -352,6 +355,23 @@ hr {
   &.active {
     opacity: 1;
     pointer-events: auto;
+
+    a {
+      &.active {
+        pointer-events: auto;
+      }
+    }
+  }
+
+  .lightbox-close {
+    @media screen and (min-width: $media-width) {
+      display: none;
+    }
+    display: flex;
+    height: $unit * 40;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
   }
 
   .lightbox-content {
@@ -366,6 +386,7 @@ hr {
       @include fill-100();
       display: flex;
       align-items: flex-end;
+      pointer-events: none;
 
       div {
         @include fill-width-100();
@@ -377,20 +398,42 @@ hr {
         margin: $unit;
         padding: $unit;
         backdrop-filter: blur(4px);
-        background-color: rgba($black-color, 0.25);
+        background-color: rgba($black-color, 0.5);
         h1,
-        p {
+        p,
+        a {
           padding: $unit;
           color: #eee;
           text-shadow: $text-shadow;
         }
+        a {
+          font-size: x-large;
+          font-weight: bold;
+        }
       }
     }
-
-    img {
+    .lightbox-image-container {
       @include fill-100();
-      // filter: blur(4px);
-      object-fit: contain;
+      overflow: auto;
+
+      .lightbox-image-content {
+        display: flex;
+        flex-direction: column;
+
+        img,
+        video {
+          @include style-outline();
+        }
+
+        img {
+          @include fill-100();
+          object-fit: contain;
+        }
+
+        video {
+          z-index: 2;
+        }
+      }
     }
   }
 }

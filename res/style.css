@@ -213,7 +213,7 @@ hr {
   padding-bottom: 2px;
   background-color: #fafafa;
   filter: drop-shadow(2px 1px 0px #aa0077);
-  outline: 2px solid #111;
+  outline: 2px solid #aa0077;
 }
 .hero .hero-content .hero-body {
   padding-top: 40px;
@@ -245,10 +245,12 @@ hr {
   position: fixed;
   z-index: 1;
   pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   backdrop-filter: blur(4px);
-  background-color: rgba(51, 51, 51, 0.85);
+  background-color: rgba(51, 51, 51, 0.95);
   padding: 8px;
-  padding-top: 120px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -260,6 +262,21 @@ hr {
 .lightbox.active {
   opacity: 1;
   pointer-events: auto;
+}
+.lightbox.active a.active {
+  pointer-events: auto;
+}
+.lightbox .lightbox-close {
+  display: flex;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+@media screen and (min-width: 900px) {
+  .lightbox .lightbox-close {
+    display: none;
+  }
 }
 .lightbox .lightbox-content {
   position: relative;
@@ -275,13 +292,14 @@ hr {
   height: 100%;
   display: flex;
   align-items: flex-end;
+  pointer-events: none;
 }
 .lightbox .lightbox-content .lightbox-content-container div {
   width: 100%;
   margin: 4px;
   padding: 4px;
   backdrop-filter: blur(4px);
-  background-color: rgba(51, 51, 51, 0.25);
+  background-color: rgba(51, 51, 51, 0.5);
 }
 @media screen and (min-width: 900px) {
   .lightbox .lightbox-content .lightbox-content-container div {
@@ -291,15 +309,36 @@ hr {
   }
 }
 .lightbox .lightbox-content .lightbox-content-container div h1,
-.lightbox .lightbox-content .lightbox-content-container div p {
+.lightbox .lightbox-content .lightbox-content-container div p,
+.lightbox .lightbox-content .lightbox-content-container div a {
   padding: 4px;
   color: #eee;
   text-shadow: 1px 1px 3px #333;
 }
-.lightbox .lightbox-content img {
+.lightbox .lightbox-content .lightbox-content-container div a {
+  font-size: x-large;
+  font-weight: bold;
+}
+.lightbox .lightbox-content .lightbox-image-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.lightbox .lightbox-content .lightbox-image-container .lightbox-image-content {
+  display: flex;
+  flex-direction: column;
+}
+.lightbox .lightbox-content .lightbox-image-container .lightbox-image-content img,
+.lightbox .lightbox-content .lightbox-image-container .lightbox-image-content video {
+  outline: 2px solid #aa0077;
+}
+.lightbox .lightbox-content .lightbox-image-container .lightbox-image-content img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.lightbox .lightbox-content .lightbox-image-container .lightbox-image-content video {
+  z-index: 2;
 }
 
 .logo {
