@@ -213,7 +213,7 @@ hr {
   padding-bottom: 2px;
   background-color: #fafafa;
   filter: drop-shadow(2px 1px 0px #aa0077);
-  outline: 2px solid #aa0077;
+  outline: 2px solid #111;
 }
 .hero .hero-content .hero-body {
   padding-top: 40px;
@@ -330,7 +330,7 @@ hr {
 }
 .lightbox .lightbox-content .lightbox-image-container .lightbox-image-content img,
 .lightbox .lightbox-content .lightbox-image-container .lightbox-image-content video {
-  outline: 2px solid #aa0077;
+  outline: 2px solid #111;
 }
 .lightbox .lightbox-content .lightbox-image-container .lightbox-image-content img {
   width: 100%;
