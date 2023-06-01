@@ -8,10 +8,6 @@ $randomNumber: random(2);
 
 * {
   vertical-align: baseline;
-  // font-weight: inherit;
-  // font-family: inherit;
-  // font-style: inherit;
-  // font-size: 100%;
   border: 0 none;
   outline: 0;
   padding: 0;
@@ -98,12 +94,7 @@ body {
           .product-item {
             &:hover {
               cursor: default;
-              // transform: translate3d(0, 0, 0);
             }
-
-            // &::after {
-            //   display: none;
-            // }
           }
         }
 
@@ -113,15 +104,12 @@ body {
             height: $unit * 70;
             width: $unit * 100;
             flex: 0 0 auto;
-            // box-shadow: none;
 
             div {
               background: none;
               justify-content: space-around;
-              // align-items: center;
               padding: $unit * 12;
               p {
-                // color: $black-color;
                 text-shadow: $text-shadow;
               }
             }
@@ -144,7 +132,6 @@ body {
             width: unset;
           }
           height: $unit * 120;
-          // @include style-all-border();
           box-shadow: 2px 1px 0px $shadow-color;
           transition: transform 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
 
@@ -177,7 +164,6 @@ body {
             justify-content: flex-end;
             gap: $unit;
             padding: $unit * 4;
-            // font-size: xx-large;
             color: #eee;
             position: absolute;
             background: rgb(255, 255, 255);
@@ -199,7 +185,6 @@ body {
           img {
             @include fill-100();
             object-fit: cover;
-            // filter: saturate(0.5);
           }
         }
 
@@ -260,8 +245,6 @@ hr {
 .hero {
   position: relative;
   height: $unit * 75;
-  // @include fill-width-100();
-  // @include style-outline();
 
   .hero-content {
     opacity: 1;
@@ -283,9 +266,7 @@ hr {
       padding-top: $unit * 0.5;
       padding-bottom: $unit * 0.5;
       background-color: #fafafa;
-      // color: #eee;
 
-      // outline: 2px solid black;
       @include style-shadow();
       @include style-outline();
     }
@@ -305,7 +286,6 @@ hr {
     img {
       @include fill-100();
       object-fit: cover;
-      // filter: contrast(0.75);
       animation-name: rainbow;
       animation-duration: 120s;
       animation-iteration-count: infinite;
@@ -313,21 +293,6 @@ hr {
       transition: filter 0.375s ease;
     }
   }
-
-  // &:hover {
-  //   .hero-content {
-  //     transform: translate3d(-45%, 0, 0);
-  //     // left: -45%;
-  //   }
-  //   .hero-body {
-  //     opacity: 0;
-  //   }
-  //   .hero-image {
-  //     img {
-  //       filter: none;
-  //     }
-  //   }
-  // }
 }
 
 .lightbox {
@@ -344,7 +309,6 @@ hr {
   backdrop-filter: blur(4px);
   background-color: rgba($black-color, 0.95);
   padding: $unit * 2;
-  // padding-top: $unit * 30;
 
   @media screen and (min-width: $media-width) {
     padding: $unit * 20;
@@ -449,8 +413,6 @@ hr {
 .logo {
   bottom: 0;
   padding: $unit * 2;
-  // height: $unit * 40;
-  // position: absolute;
   display: flex;
   justify-content: center;
 
