@@ -418,20 +418,28 @@ hr {
 
       .lightbox-image-content {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
 
         img,
         video {
+          height: $unit * 80;
           @include style-outline();
         }
 
         img {
-          @include fill-100();
+          flex: 1 0 21%;
+          width: 100%;
+          @media screen and (min-width: $media-width) {
+            width: 50%;
+          }
+          height: 100%;
           object-fit: contain;
         }
 
         video {
+          @include fill-100();
           z-index: 2;
+          background-color: $black-color;
         }
       }
     }

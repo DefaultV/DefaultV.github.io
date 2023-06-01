@@ -23,13 +23,15 @@ var createProductItem = function (workCase) {
     return productItem;
 };
 var createLightboxMedia = function (url) {
-    console.log(url.substring(url.length - 3));
     var media = undefined;
     var isVideo = url.substring(url.length - 3) == "mp4";
     if (isVideo) {
         var video = document.createElement("video");
         var source = document.createElement("source");
         video.controls = true;
+        video.muted = true;
+        video.defaultMuted = true;
+        video.playsInline = true;
         source.src = url;
         video.appendChild(source);
         media = video;

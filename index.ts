@@ -59,13 +59,15 @@ const createProductItem = (workCase: ICase): HTMLDivElement => {
 const createLightboxMedia = (
   url: string
 ): HTMLImageElement | HTMLVideoElement => {
-  console.log(url.substring(url.length - 3));
   let media: HTMLImageElement | HTMLVideoElement | undefined = undefined;
   const isVideo = url.substring(url.length - 3) == "mp4";
   if (isVideo) {
     const video = document.createElement("video");
     const source = document.createElement("source");
     video.controls = true;
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
     source.src = url;
     video.appendChild(source);
 
