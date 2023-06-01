@@ -11,8 +11,8 @@
         "res/artland4.png",
         "res/artland5.png",
         "res/artland6.png",
-        "res/artland_clip1.mp4",
-        "res/artland_clip2.mp4"
+        "res/artland_clip1_c.mp4",
+        "res/artland_clip2_c.mp4"
       ],
       "externalLink": "https://www.artland.com/exhibitions?filter=VR%20Exhibitions#exhibitions-content-area",
       "externalLinkDescription": "See them here"
@@ -22,7 +22,7 @@
       "title": "🔮 3D Viewer",
       "body": "Artland",
       "featureImageUrl": "res/viewer2.png",
-      "additionalMediaUrls": ["res/viewer3.png", "res/viewer_clip1.mp4"],
+      "additionalMediaUrls": ["res/viewer3.png", "res/viewer_clip1_c.mp4"],
       "externalLink": "https://www.artland.com/artworks/tomas-saraceno-k236-cmi",
       "externalLinkDescription": "Live example"
     },

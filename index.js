@@ -28,11 +28,12 @@ var createLightboxMedia = function (url) {
     if (isVideo) {
         var video = document.createElement("video");
         var source = document.createElement("source");
+        source.src = url;
         video.controls = true;
         video.muted = true;
         video.defaultMuted = true;
         video.playsInline = true;
-        source.src = url;
+        video.setAttribute("type", "video/mp4");
         video.appendChild(source);
         media = video;
     }

@@ -64,11 +64,13 @@ const createLightboxMedia = (
   if (isVideo) {
     const video = document.createElement("video");
     const source = document.createElement("source");
+    source.src = url;
     video.controls = true;
     video.muted = true;
     video.defaultMuted = true;
     video.playsInline = true;
-    source.src = url;
+    video.setAttribute("type", "video/mp4");
+
     video.appendChild(source);
 
     media = video;
