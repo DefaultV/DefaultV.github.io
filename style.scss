@@ -110,6 +110,7 @@ body {
               justify-content: space-around;
               padding: $unit * 12;
               p {
+                color: #fff;
                 text-shadow: $text-shadow;
               }
             }
@@ -379,10 +380,12 @@ hr {
     .lightbox-image-container {
       @include fill-100();
       overflow: auto;
+      background-color: $black-color;
 
       .lightbox-image-content {
         display: flex;
         flex-wrap: wrap;
+        background-color: $black-color;
 
         img,
         video {

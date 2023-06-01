@@ -31,7 +31,8 @@
       "id": 2,
       "title": "🐼 The Ogi: Cycles",
       "body": "Game",
-      "featureImageUrl": "res/ogi2.png",
+      "featureImageUrl": "res/ogi2_clip.gif",
+      "additionalMediaUrls": ["res/ogi2.png"],
       "externalLink": "https://ogi2.onrender.com/",
       "externalLinkDescription": "See it here"
     },
@@ -42,6 +43,30 @@
       "featureImageUrl": "res/ogi1.png",
       "externalLink": "https://defaultv.itch.io/the-ogi",
       "externalLinkDescription": "Play it here"
+    },
+    {
+      "id": 7,
+      "title": "🛰️ CUBI",
+      "body": "Android App - Game",
+      "featureImageUrl": "res/cubi.jpeg",
+      "additionalMediaUrls": [
+        "res/cubi_1.jpg",
+        "res/cubi_2.jpg",
+        "res/cubi_3.jpg"
+      ],
+      "externalLink": "https://play.google.com/store/apps/details?id=com.Company.JaGaGames",
+      "externalLinkDescription": "Store page"
+    },
+    {
+      "id": 6,
+      "title": "🫣 EBB",
+      "body": "Game",
+      "featureImageUrl": "res/ebb_loading.gif",
+      "additionalMediaUrls": [
+        "res/Ebb_logo.png",
+        "res/ebb.jpeg",
+        "res/ebb_sewers.PNG"
+      ]
     },
     {
       "id": 4,
@@ -58,20 +83,6 @@
       "featureImageUrl": "res/maddingburg2.png",
       "externalLink": "https://defaultv.itch.io/maddinburg",
       "externalLinkDescription": "Play it here"
-    },
-    {
-      "id": 6,
-      "title": "🫣 EBB",
-      "body": "Game",
-      "featureImageUrl": "res/ebb.jpeg"
-    },
-    {
-      "id": 7,
-      "title": "🛰️ CUBI",
-      "body": "Android App",
-      "featureImageUrl": "res/cubi.jpeg",
-      "externalLink": "https://play.google.com/store/apps/details?id=com.Company.JaGaGames",
-      "externalLinkDescription": "Store page"
     }
   ]
 }
