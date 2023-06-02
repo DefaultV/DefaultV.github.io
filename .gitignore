@@ -1,3 +1,9 @@
 node_modules/
 bun.lockb
 package.json
+*.sh
+*.js
+!*.min.js
+*.css.map
+*.ts
+style.scss

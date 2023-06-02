@@ -21,7 +21,7 @@ body {
 }
 
 .page {
-  padding: 10vw;
+  padding: 5vw;
   padding-top: 64px;
   padding-bottom: 48px;
   position: relative;
@@ -29,6 +29,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   border-top: 2px solid #aa0077;
+}
+@media screen and (min-width: 900px) {
+  .page {
+    padding: 10vw;
+  }
 }
 .page .page-content {
   display: flex;
@@ -136,7 +141,8 @@ body {
 .page .page-content .page-item .page-item-column .product-item div p:first-of-type {
   font-size: xx-large;
 }
-.page .page-content .page-item .page-item-column .product-item img {
+.page .page-content .page-item .page-item-column .product-item img,
+.page .page-content .page-item .page-item-column .product-item video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -151,6 +157,63 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.page .canvasContainer {
+  overflow: hidden;
+  position: relative;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+@media screen and (min-width: 900px) {
+  .page .canvasContainer {
+    height: unset;
+  }
+}
+.page .canvasContainer:hover {
+  cursor: pointer;
+}
+.page .canvasContainer.active:hover {
+  cursor: default;
+}
+.page .canvasContainer.active div,
+.page .canvasContainer.active img {
+  opacity: 0;
+  pointer-events: none;
+}
+.page .canvasContainer div,
+.page .canvasContainer img {
+  transition: opacity 0.375s ease-in-out;
+  transition-delay: 2s;
+}
+.page .canvasContainer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px);
+  opacity: 1;
+  z-index: 1;
+}
+.page .canvasContainer div {
+  opacity: 1;
+  max-width: 75%;
+  font-size: x-large;
+  position: absolute;
+  color: #eee;
+  background-color: #333;
+  padding: 16px;
+  outline: 2px solid #aa0077;
+  filter: drop-shadow(2px 1px 0px #aa0077);
+  z-index: 2;
+}
+.page .canvasContainer canvas {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #333;
+  filter: drop-shadow(2px 1px 0px #aa0077);
 }
 
 hr {

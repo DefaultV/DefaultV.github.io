@@ -31,7 +31,7 @@
       "id": 2,
       "title": "🐼 The Ogi: Cycles",
       "body": "Game",
-      "featureImageUrl": "res/ogi2_clip.gif",
+      "featureImageUrl": "res/ogi2_clip1.mp4",
       "additionalMediaUrls": ["res/ogi2.png"],
       "externalLink": "https://ogi2.onrender.com/",
       "externalLinkDescription": "See it here"
@@ -61,7 +61,7 @@
       "id": 6,
       "title": "🫣 EBB",
       "body": "Game",
-      "featureImageUrl": "res/ebb_loading.gif",
+      "featureImageUrl": "res/ebb_clip1_c.mp4",
       "additionalMediaUrls": [
         "res/Ebb_logo.png",
         "res/ebb.jpeg",
