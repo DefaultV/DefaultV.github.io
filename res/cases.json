@@ -41,6 +41,7 @@
       "title": "🐼 The Ogi",
       "body": "Itch IO - GameJam [🥉 Graphics]",
       "featureImageUrl": "res/ogi1.png",
+      "additionalMediaUrls": ["res/ogi1.jpeg"],
       "externalLink": "https://defaultv.itch.io/the-ogi",
       "externalLinkDescription": "Play it here"
     },
