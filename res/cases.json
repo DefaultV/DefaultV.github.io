@@ -4,13 +4,13 @@
       "id": 0,
       "title": "🎨 Virtual Exhibitions",
       "body": "Artland [🥇 Best on market]",
-      "featureImageUrl": "res/artland_1.jpeg",
+      "featureImageUrl": "res/artland_1.webp",
       "additionalMediaUrls": [
-        "res/artland2.png",
-        "res/artland3.png",
-        "res/artland4.png",
-        "res/artland5.png",
-        "res/artland6.png",
+        "res/artland2.webp",
+        "res/artland3.webp",
+        "res/artland4.webp",
+        "res/artland5.webp",
+        "res/artland6.webp",
         "res/artland_clip1_c.mp4",
         "res/artland_clip2_c.mp4",
         "res/artland_clipvr.mp4"
@@ -22,8 +22,8 @@
       "id": 1,
       "title": "🔮 3D Viewer",
       "body": "Artland",
-      "featureImageUrl": "res/viewer2.png",
-      "additionalMediaUrls": ["res/viewer3.png", "res/viewer_clip1_c.mp4"],
+      "featureImageUrl": "res/viewer2.webp",
+      "additionalMediaUrls": ["res/viewer3.webp", "res/viewer_clip1_c.mp4"],
       "externalLink": "https://www.artland.com/artworks/tomas-saraceno-k236-cmi",
       "externalLinkDescription": "Live example"
     },
@@ -32,7 +32,7 @@
       "title": "🐼 The Ogi: Cycles",
       "body": "Game",
       "featureImageUrl": "res/ogi2_clip1.mp4",
-      "additionalMediaUrls": ["res/ogi2.png"],
+      "additionalMediaUrls": ["res/ogi2.webp"],
       "externalLink": "https://ogi2.onrender.com/",
       "externalLinkDescription": "See it here"
     },
@@ -40,8 +40,7 @@
       "id": 3,
       "title": "🐼 The Ogi",
       "body": "Itch IO - GameJam [🥉 Graphics]",
-      "featureImageUrl": "res/ogi1.png",
-      "additionalMediaUrls": ["res/ogi1.jpeg"],
+      "featureImageUrl": "res/ogi1.webp",
       "externalLink": "https://defaultv.itch.io/the-ogi",
       "externalLinkDescription": "Play it here"
     },
@@ -49,11 +48,11 @@
       "id": 7,
       "title": "🛰️ CUBI",
       "body": "Android App - Game",
-      "featureImageUrl": "res/cubi.jpeg",
+      "featureImageUrl": "res/cubi.webp",
       "additionalMediaUrls": [
-        "res/cubi_1.jpg",
-        "res/cubi_2.jpg",
-        "res/cubi_3.jpg"
+        "res/cubi_1.webp",
+        "res/cubi_2.webp",
+        "res/cubi_3.webp"
       ],
       "externalLink": "https://play.google.com/store/apps/details?id=com.Company.JaGaGames",
       "externalLinkDescription": "Store page"
@@ -64,16 +63,16 @@
       "body": "Game",
       "featureImageUrl": "res/ebb_clip1_c.mp4",
       "additionalMediaUrls": [
-        "res/Ebb_logo.png",
-        "res/ebb.jpeg",
-        "res/ebb_sewers.PNG"
+        "res/Ebb_logo.webp",
+        "res/ebb.webp",
+        "res/ebb_sewers.webp"
       ]
     },
     {
       "id": 4,
       "title": "🎶 ELPi",
       "body": "Music Streaming",
-      "featureImageUrl": "res/elpi.png",
+      "featureImageUrl": "res/elpi.webp",
       "externalLink": "https://github.com/DefaultV/ELPi",
       "externalLinkDescription": "Github page"
     },
@@ -81,7 +80,7 @@
       "id": 5,
       "title": "⛰️ Maddinburg Hills",
       "body": "Itch IO - GameJam",
-      "featureImageUrl": "res/maddingburg2.png",
+      "featureImageUrl": "res/maddingburg2.webp",
       "externalLink": "https://defaultv.itch.io/maddinburg",
       "externalLinkDescription": "Play it here"
     }
