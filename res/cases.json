@@ -32,9 +32,7 @@
       "title": "🐼 The Ogi: Cycles",
       "body": "Game",
       "featureImageUrl": "res/ogi2_clip1.mp4",
-      "additionalMediaUrls": ["res/ogi2.webp"],
-      "externalLink": "https://ogi2.onrender.com/",
-      "externalLinkDescription": "See it here"
+      "additionalMediaUrls": ["res/ogi2.webp"]
     },
     {
       "id": 3,
