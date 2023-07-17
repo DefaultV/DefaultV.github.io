@@ -387,6 +387,8 @@ hr {
 @media screen and (min-width: 900px) {
   .lightbox {
     padding: 80px;
+    padding-left: 24vw;
+    padding-right: 24vw;
   }
 }
 .lightbox.active {

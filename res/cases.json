@@ -31,8 +31,14 @@
       "id": 2,
       "title": "🐼 The Ogi: Cycles",
       "body": "Game - 2023",
-      "featureImageUrl": "res/ogi2_clip1.mp4",
-      "additionalMediaUrls": ["res/ogi2.webp"]
+      "featureImageUrl": "res/ogi2_clip2.mp4",
+      "additionalMediaUrls": [
+        "res/ogi2.webp",
+        "res/ogicycles_1.webp",
+        "res/ogicycles_2.webp",
+        "res/ogicycles_3.webp",
+        "res/ogi2_clip1.mp4"
+      ]
     },
     {
       "id": 6,
@@ -40,10 +46,10 @@
       "body": "Game - 2022",
       "featureImageUrl": "res/pome_clip1.mp4",
       "additionalMediaUrls": [
-        "res/pome_1.png",
-        "res/pome_2.png",
-        "res/pome_3.png",
-        "res/pome_4.png"
+        "res/pome_1.webp",
+        "res/pome_2.webp",
+        "res/pome_3.webp",
+        "res/pome_4.webp"
       ],
       "externalLink": "https://megabytemagician.itch.io/pome",
       "externalLinkDescription": "Play it here"
