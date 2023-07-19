@@ -74,8 +74,9 @@
       "id": 7,
       "title": "🛰️ CUBI",
       "body": "Android App - Game - 2019",
-      "featureImageUrl": "res/cubi.webp",
+      "featureImageUrl": "res/cubi_c1.mp4",
       "additionalMediaUrls": [
+        "res/cubi.webp",
         "res/cubi_1.webp",
         "res/cubi_2.webp",
         "res/cubi_3.webp"
